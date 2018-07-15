@@ -54,6 +54,12 @@
 .icon-attachment:before {
     content: "\e909";
 }
+.icon-framework:before {
+  content: "\e920";
+}
+.icon-cogs:before {
+  content: "\e995";
+}
 .icon-backward:before {
     content: "\e90a";
 }
