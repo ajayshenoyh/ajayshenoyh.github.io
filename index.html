@@ -30,7 +30,12 @@
 ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <!-- <script>
 
+        var date = new Date().getFullYear();
+        document.getElementById("year").innerHTML = 2;
+        console.log(date);
+        </script> -->
 
     <!-- favicons
 ================================================== -->
@@ -59,7 +64,7 @@
                     <li><a class="smoothscroll" href="#education" title="services">Education</a></li>
                     <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
                     <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
-                    <li><a href="resumepage.pdf" target="_blank" title="resume">Resume</a></li>
+                    <li><a href="https://drive.google.com/open?id=1fFL7f81vfSVSbDx2Y7q-7FlhXoC25-Ck" target="_blank" title="resume">Resume</a></li>
                 </ul>
 
                 <p>Feel free to <a href='#contact'> Contact </a> me or take a look at my <a href="resumepage.pdf"
@@ -114,6 +119,9 @@
                 </h2>
 
                 <div class="home-content__buttons">
+                        <a href="https://drive.google.com/open?id=1fFL7f81vfSVSbDx2Y7q-7FlhXoC25-Ck" target="_blank" title="resume" class="btn btn--stroke">
+                                Resume
+                            </a>
                     <a href="#contact" class="smoothscroll btn btn--stroke">
                         Contact
                     </a>
@@ -174,7 +182,11 @@
         <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
 
             <div class="col-block stats__col ">
-                <div class="stats__count">23</div>
+                <div class="stats__count">
+                    <span id="age">
+                        <script>document.getElementById('age').innerText = new Date().getFullYear() - 1995</script>
+                    </span>
+                </div>
                 <h5>Years of Age</h5>
             </div>
             <div class="col-block stats__col">
@@ -186,7 +198,9 @@
                 <h5>Projects Completed</h5>
             </div>
             <div class="col-block stats__col">
-                <div class="stats__count">2</div>
+                <div class="stats__count"><span id="year">
+                        <script>document.getElementById('year').innerText = new Date().getFullYear() - 2017</script>
+                    </span></div>
                 <h5>Years of Experience</h5>
             </div>
 
